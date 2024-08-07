@@ -1,0 +1,99 @@
+body {
+    font-family: Georgia, serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #4a5791;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro-section {
+    margin-bottom: 20px;
+}
+
+.intro {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #25534b;
+    margin-bottom: 10px;
+}
+
+.hobbies-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.dream-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: 20px 0;
+}
+
+.hobby, .dream {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.hobby img, .dream img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.hobby img:hover, .dream img:hover {
+    transform: scale(1.1);
+}
+
+#change-color-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#change-color-btn:hover {
+    background-color: #45a049;
+}
+
+.footer {
+    background-color: #4a5791;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
